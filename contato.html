@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel=" preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;1,200;1,400&family=Red+Hat+Display:wght@400;500;700&family=Roboto&display=swap"
+        rel="stylesheet"> -->
+</head>
+
+<body>
+
+    <header>
+        <section>
+            <img src="./imagens/logo.gif" alt="Logo da empresa XPTO" width="150px" />
+
+            <!-- Início do menu do site -->
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            Início
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contato.html">
+                            Contato
+                        </a>
+                    </li>
+                    <li>
+                        <a href="gatinhos.html">
+                            Gatinhos Fofinhos
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Fim do menu do site -->
+        </section>
+    </header>
+    <!-- Fim do header -->
+
+    <!-- Inicio do main -->
+    <main>
+        <!-- Inicio da section do conteúdo do site -->
+        <section>
+            <!-- Conteúdo de texto sobre o site-->
+            <article>
+                <h1>Formulário de Contato</h1>
+                <p>Preencha os dados abaixo e envie sua mensagem de contato.</p>
+                <fieldset>
+                    <legend>
+                        <h5>Dados de Contato</h5>
+                    </legend>
+                    <form id="frmInscricao" action="contato.php" method="post">
+                        <label>Nome:</label><br>
+                        <input type="text" required="required" id="txtNome" maxlength="100" size="50"><br><br>
+
+                        <label>Data de Nascimento:</label><br>
+                        <input type="date" required="required" id="txtDataNascimento"><br><br>
+
+                        <label>Sexo:</label><br>
+                        <input type="radio" name="rdoSexo" value="M" required="required">
+                        <label>Masculino</label>
+                        <input type="radio" name="rdoSexo" value="F">
+                        <label>Femenino</label><br><br>
+
+                        <label>Endereço:</label><br>
+                        <input type="text" required="required" id="txtLogradouro" maxlength="100" size="50"><br><br>
+
+                        <label>Estado:</label><br>
+                        <select id="cbxEstado" required="required">
+                            <option value="">-Selecione-</option>
+                            <option value="1">SC-</option>
+                            <option value="2">MG</option>
+                        </select><br><br>
+
+                        <label>Cidade:</label><br>
+                        <select id="cbxEstado" required="required">
+                            <option value="">-Selecione-</option>
+                            <option value="1">Florianópolis-</option>
+                            <option value="2">Uberlândia</option>
+                        </select><br><br>
+
+                        <label>Celular:</label><br>
+                        <input type="tel" required="required" id="txtCelular" size="50" placeholder="(##) #####-####"
+                            maxlength="15"><br><br>
+
+                        <label>E-mail:</label><br>
+                        <input type="email" required="required" size="50" id="txtEmail"><br><br>
+
+                        <label>Áreas de Interesse:</label><br>
+                        <input type="checkbox" value="HTML" name="chkAreasInteresse">
+                        <label>HTML</label>
+                        <input type="checkbox" value="CSS" name="chkAreasInteresse">
+                        <label>CSS</label>
+                        <input type="checkbox" value="JavaScript" name="chkAreasInteresse">
+                        <label>JavaScript</label><br><br>
+
+                        <label>Mensagem:</label><br>
+                        <textarea cols="50" rows="5" required="required"></textarea><br><br>
+
+                        <input id="btnEnviar" type="submit" value="Enviar" />
+
+                    </form>
+                </fieldset>
+            </article>
+            <!--Fim do conteúdo de texto sobre o site-->
+        </section>
+        <!--Fim da section do conteúdo do site-->
+    </main>
+    <!-- Fim do main -->
+
+    <!-- Início do footer -->
+    <footer>
+        <!-- Início das redes sociais -->
+        <ul>
+            <li>
+                <a href="#">
+                    <img src="./imagens/logo-insta.png" alt="Instagram" width="30px" />
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./imagens/logo-twitter.png" alt="Twitter" width="30px" />
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./imagens/logo-facebook.png" alt="Facebook" width="30px" />
+                </a>
+            </li>
+        </ul>
+        <!-- Fim das redes sociais -->
+
+        <div class="flex-container footer">
+            <p>&copy; 2022 HTML</p>
+            <p>Desenvolvido por: Carlos Hayden</p>
+        </div>
+    </footer>
+    <!-- Fim do footer -->
+
+</body>
+
+</html>
