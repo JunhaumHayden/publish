@@ -1,7 +1,8 @@
 # publish
 
 <h1 align="center"> My first web page published on internet </h1>
-![Logo retangular metade em preto com letras brancas escrito Junhaum e branco com letras pretas escrito Coorp](https://github.com/JunhaumHayden/publish/blob/master/imagens/logo.gif)
+
+![Logo retangular metade em preto com letras brancas escrito Junhaum e branco com letras pretas escrito Coorp](https://user-images.githubusercontent.com/79289647/194371641-caa2071a-e2cb-4fc4-a52d-0d6ec22b8dc3.gif)
 
 
 
