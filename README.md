@@ -1,7 +1,10 @@
 # publish
 
 <h1 align="center"> My first web page published on internet </h1>
-![Logo retangular metade em preto com letras brancas escrito Junhaum e branco com letras pretas escrito Coorp](imagens/logo.gif)
+![Logo retangular metade em preto com letras brancas escrito Junhaum e branco com letras pretas escrito Coorp](https://github.com/JunhaumHayden/publish/blob/master/imagens/logo.gif)
+
+
+
 
 <p align="center">
 <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
