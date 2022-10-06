@@ -26,7 +26,7 @@ Tomei a liberdade de integrar, para simular o anúncio de páginas parceiras, um
 # Author
 
 | [<img src="https://avatars.githubusercontent.com/u/79289647?v=4" width=115><br><sub>Carlos Hayden</sub>](https://github.com/JunhaumHayden) |
-| :---: | :---: | :---: |
+| :---: |
 
 
 
