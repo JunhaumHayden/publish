@@ -12,102 +12,143 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;1,200;1,400&family=Red+Hat+Display:wght@400;500;700&family=Roboto&display=swap"
         rel="stylesheet"> -->
+        <link rel="stylesheet" type="text/css" href="./CSS/estilo.css">
 </head>
 
 <body>
 
     <header>
-        <section>
-            <img src="./imagens/logo.gif" alt="Logo da empresa XPTO" width="150px" />
-
-            <!-- Início do menu do site -->
-            <nav>
-                <ul>
-                    <li>
-                        <a href="index.html">
-                            Início
-                        </a>
-                    </li>
-                    <li>
-                        <a href="contato.html">
-                            Contato
-                        </a>
-                    </li>
-                    <li>
-                        <a href="gatinhos.html">
-                            Gatinhos Fofinhos
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <!-- Fim do menu do site -->
-        </section>
+        <div class="flex-container menu">
+            <div>
+                <h1><img src="./imagens/logo.gif" alt="Logo da empresa XPTO"  width="100px"/></h1>
+            </div>
+            <ul class="list-items">
+                <li><a href="index.html" >Início</a></li>
+                <li><a href="contato.html" target="_blank" class="botao-destaque">Contato</a></li>
+                <!-- <li><a href="#planos">Planos</a></li> -->
+            </ul>
+        </div>
     </header>
     <!-- Fim do header -->
 
     <!-- Inicio do main -->
     <main>
         <!-- Inicio da section do conteúdo do site -->
+        <div class="texto-apresentacao">
+            <br><br><br><br>
+            <h1>Formulário de Contato</h1>
+             <p>Preencha os dados abaixo e envie sua mensagem de contato.</p><br><br>
+        </div>
         <section>
-            <!-- Conteúdo de texto sobre o site-->
+            
             <article>
-                <h1>Formulário de Contato</h1>
-                <p>Preencha os dados abaixo e envie sua mensagem de contato.</p>
+                
+               
+               
                 <fieldset>
+                
+                    
                     <legend>
                         <h5>Dados de Contato</h5>
+
+                    
                     </legend>
-                    <form id="frmInscricao" action="contato.php" method="post">
-                        <label>Nome:</label><br>
-                        <input type="text" required="required" id="txtNome" maxlength="100" size="50"><br><br>
+                    <div class="entrada">
+                        <form id="frmInscricao" action="contato.php" method="post">
+                      <div class="rotulo">
+                            
+                            <label>Nome:</label><br>
+                            <div class="entrada mensagem">
+                             <input type="text" required="required" id="txtNome" maxlength="100" size="50" ><br></div><br>
+                    
+                      </div>
+                      <div class="rotulo">
+                            <label>Data de Nascimento:</label><br>
+                            <div class="entrada mensagem">
+                                <input type="date" required="required" id="txtDataNascimento"><br>
+                            </div><br>
+                       </div>
 
-                        <label>Data de Nascimento:</label><br>
-                        <input type="date" required="required" id="txtDataNascimento"><br><br>
-
+                        <div class="rotulo">
                         <label>Sexo:</label><br>
+                        <div class="entrada mensagem">
                         <input type="radio" name="rdoSexo" value="M" required="required">
                         <label>Masculino</label>
                         <input type="radio" name="rdoSexo" value="F">
-                        <label>Femenino</label><br><br>
+                        <label>Femenino</label><br>
+                    </div><br>
+                    </div>
 
-                        <label>Endereço:</label><br>
-                        <input type="text" required="required" id="txtLogradouro" maxlength="100" size="50"><br><br>
+                        <div class="rotulo">
+                            <label>Endereço:</label><br>
+                            <div class="entrada mensagem">
+                            <input type="text" required="required" id="txtLogradouro" maxlength="100" size="50"><br>
+                        </div><br>
+                    </div>
 
+                        <div class="rotulo">
                         <label>Estado:</label><br>
+                        <div class="entrada mensagem">
                         <select id="cbxEstado" required="required">
                             <option value="">-Selecione-</option>
                             <option value="1">SC-</option>
                             <option value="2">MG</option>
-                        </select><br><br>
+                        </select><br>
+                    </div><br>
+                </div>
 
-                        <label>Cidade:</label><br>
+                        
+                        <div class="rotulo">
+                            <label>Cidade:</label><br>
+                            <div class="entrada mensagem">
                         <select id="cbxEstado" required="required">
                             <option value="">-Selecione-</option>
                             <option value="1">Florianópolis-</option>
                             <option value="2">Uberlândia</option>
-                        </select><br><br>
+                        </select><br>
+                    </div><br>
+                </div>
 
+
+                        <div class="rotulo">
                         <label>Celular:</label><br>
+                        <div class="entrada mensagem">
                         <input type="tel" required="required" id="txtCelular" size="50" placeholder="(##) #####-####"
-                            maxlength="15"><br><br>
-
+                            maxlength="15"><br>
+                        </div> <br>
+                    </div>
+                        <div class="rotulo">
                         <label>E-mail:</label><br>
-                        <input type="email" required="required" size="50" id="txtEmail"><br><br>
+                          <div class="entrada mensagem">
+                          <input type="email" required="required" size="50" id="txtEmail" ><br>
+                         </div><br>
+                        </div>
 
-                        <label>Áreas de Interesse:</label><br>
-                        <input type="checkbox" value="HTML" name="chkAreasInteresse">
-                        <label>HTML</label>
-                        <input type="checkbox" value="CSS" name="chkAreasInteresse">
-                        <label>CSS</label>
-                        <input type="checkbox" value="JavaScript" name="chkAreasInteresse">
-                        <label>JavaScript</label><br><br>
 
-                        <label>Mensagem:</label><br>
-                        <textarea cols="50" rows="5" required="required"></textarea><br><br>
+                        <div class="rotulo">
+                          <label>Áreas de Interesse:</label><br>
+                          <div class="entrada mensagem">
+                             <input type="checkbox" value="HTML" name="chkAreasInteresse">
+                             <label>HTML</label>
+                             <input type="checkbox" value="CSS" name="chkAreasInteresse">
+                             <label>CSS</label>
+                             <input type="checkbox" value="JavaScript" name="chkAreasInteresse" >
+                             <label>JavaScript</label><br>
+                        </div><br>
+                    </div>
 
-                        <input id="btnEnviar" type="submit" value="Enviar" />
+                        <div class="rotulo">
+                            <label>Mensagem:</label><br>
+                            <div class="entrada mensagem">
+                            <textarea cols="50" rows="5" required="required" class="entrada mensagem"></textarea><br><br>
+                        </div>
+                    </div>
+                </div>
 
-                    </form>
+                        <input id="btnEnviar" type="submit" value="Enviar" class="btn"/>
+
+                        </form>
+                    </div>
                 </fieldset>
             </article>
             <!--Fim do conteúdo de texto sobre o site-->
