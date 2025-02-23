@@ -8,6 +8,14 @@
         text-shadow: 1px 1px #efddddcc;
         
     }
+    .img-max-size {
+        max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
+        max-height: 210px; /* Define a altura máxima da imagem */
+        width: auto; /* Mantém a proporção da imagem */
+        height: auto; /* Mantém a proporção da imagem */
+        display: block; /* Remove espaços extras abaixo da imagem */
+        margin: 0 auto; /* Centraliza a imagem horizontalmente */
+    }
 
     
    
