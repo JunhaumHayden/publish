@@ -3,175 +3,337 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
-    <link rel="stylesheet" type="text/css" href="./CSS/estilo.css">
+    <title>Carlos Hayden - Desenvolvedor Web</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/estilo.css">
+    <link rel="shortcut icon" type="imagex/png" href="./assets/assets/imagens/icon.ico">
 </head>
 
 <body>
-    <!-- Início do header -->
-    <header>
-
-        
-            <div class="flex-container menu">
-                <div>
-                    <h1><img src="./imagens/logo.gif" alt="Logo da empresa XPTO"  width="100px"/></h1>
+    <!-- Header com Navbar -->
+    <header class="bg-dark text-white">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/imagens/logo.gif" alt="Logo Carlos Hayden" width="100px">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sobre">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projetos">Projetos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contato.html">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-primary" href="https://github.com/JunhaumHayden?tab=repositories" target="_blank">GitHub</a>
+                        </li>
+                    </ul>
                 </div>
-                <ul class="list-items">
-                    <li><a href="index.html" class="botao-destaque">Início</a></li>
-                    <li><a href="contato.html" target="_blank">Contato</a></li>
-                    <!-- <li><a href="#planos">Planos</a></li> -->
-                </ul>
             </div>
-       
+        </nav>
     </header>
-        <!-- Fim do header -->
-        <!-- Início do main -->
-        <main>
-            <!-- Início da section do conteúdo do site -->
 
-            <div class="flex-container apresentacao">
-                <div class="texto-apresentacao">
-                    <h1>Desenvolvimento <br>Web</h1>
-                    <p>O melhor serviço para você!</p>
-                    <a href="contato.html" class="btn">Saiba Mais!</a>
+    <!-- Hero Section -->
+    <section class="hero bg-primary text-white text-center py-5">
+        <div class="logo ms-auto">
+            <img src="https://avatars.githubusercontent.com/u/79289647?v=4" width="200" alt="Logo"class="rounded-circle">
+        </div>
+        <div class="container">
+            
+            <h1 class="display-4">Carlos Hayden</h1>
+            <p class="lead">Desenvolvedor Web | Apaixonado por Tecnologia e Inovação</p>
+            <a href="#sobre" class="btn btn-light btn-lg">Conheça mais</a>
+        </div>
+    </section>
+
+    <!-- Sobre Mim -->
+    <section id="sobre" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2>Sobre Mim</h2>
+                    <p class="lead">
+                        Um explorador incansável do vasto universo do desenvolvimento de software! 💻✨ Minha jornada na tecnologia começou há mais de duas décadas, navegando entre redes, infraestrutura e microeletrônica, até desembarcar no fascinante mundo da programação.
+                    </p>
+                    <p class="lead">
+                        Hoje, estou embarcando em uma missão para dominar linguagens como Python, Java, C++ e PHP, enquanto construo APIs robustas com Spring Boot e RESTful Web Services. Também desbravo os segredos do MySQL, crio interfaces atraentes com HTML, CSS e JavaScript, e turbinando tudo isso com Bootstrap.
+                    </p>
+                    </p>
+                    <a href="https://www.linkedin.com/in/carlos-hayden-junior/" class="btn btn-primary" target="_blank">Meu LinkedIn</a>
                 </div>
-        
-                <div>
-
-                    <h4>Veja os gatinhos mais Fofinhos da Intrnet</h4>
-                    <p><a href="gatinhos.html" class="btn">
-                            Gatinhos Fofinhos</a></p>
-
-                    <h4>Faça as viagens mais incriveis da Internet</h4>
-                    <p><a href="flexturismo.html" class="btn">
-                            FlexTurismos</a></p>
-                    <!-- <div><img src="./imagens/0-main.png" alt="banner de apresentação"></div> -->
+                <div class="col-md-6">
+                    <img src="./assets/imagens/me/me400x400.jpg" alt="Carlos Hayden" width="300" class="img-fluid rounded-circle">
                 </div>
             </div>
-            <!-- <section> -->
-                <!-- Conteúdo de texto sobre o site -->
-                <!-- <aside>-->
-                     
-                            
-                <!--</aside> -->
-
-                <!-- <article> -->
-
-                    <div class="flex-container" id="quem-somos">
-                        <!-- <div>
-                            
-                    <p><a href="gatinhos.html" class="btn">
-                            Gatinhos Fofinhos</a></p>
-                            <h5>Veja os gatinhos mais Fofinhos da Intrnet</h5>
-
-                    
-                    <p><a href="flexturismo.html" class="btn">
-                            FlexTurismos</a></p>
-                            <h4>Faça as viagens mais incriveis da Internet</h4>
-                        </div> -->
-                        <div>
-                            <h2>Landing Page</h2>
-                            <p>Lorem Ipsum is simply dummy text of the printing and
-                                typesetting
-                                industry. Lorem Ipsum has been the industry’s standard
-                                dummy text
-                                ever since the 1500s, when an unknown printer took a
-                                galley of type
-                                and. </p>
-                            <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed
-                                to using 'Content here, content here', making it look like readable English.</p>
-                                <a href="#" class="btn">Saiba mais</a>
-                        </div>
-                        <div>
-                            <img src="./imagens/pessoas.png" alt="balcão de atendimento" width="600px">
-                        </div>
+            <div class="col-md-0">
+                <p class="lead">
+                    <br>
+                    💡 Além do código, sou um entusiasta de versionamento com Git, testes unitários, diagramação UML, e já tive meus encontros com AWS e Docker. Meu sistema operacional? Qualquer um que rode meu código sem reclamar! (Linux, Windows, macOS—tô em todos!)
+                </p>
+                <p class="lead">
+                    Quando não estou escrevendo linhas de código (ou depurando-as 😅), gosto de aprender sobre novas tecnologias e desafios, sempre com aquele espírito de resolver problemas e criar soluções inovadoras.
+                    Se você também é apaixonado por tecnologia ou tem um desafio interessante, vamos trocar uma ideia! 🚀.
+                </p>
+                </p>
                 
+            </div>
+            
+        </div>
+        </div>
+    </section>
+
+    <!-- Projetos
+    <section id="projetos" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Projetos Destacados</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://raw.githubusercontent.com/JunhaumHayden/ComfortAid_APP_Project/refs/heads/main/assets/img/LogoComfortAid-removebg500.png" class="card-img-top" alt="ComfortAid APP">
+                        <div class="card-body">
+                            <h5 class="card-title">ComfortAid – Seu Bem-Estar na Palma da Mão!</h5>
+                            <p class="card-text">É o aplicativo perfeito para quem busca conforto e praticidade na hora de agendar serviços de massagem terapêutica e estética. Com todas as funcionalidades pensadas para você, ele conecta clientes e profissionais de forma simples, rápida e segura.</p>
+                            <a href="https://junhaumhayden.github.io/ComfortAid_APP_Project/" class="btn btn-secondary ms-auto">WebPage</a>
+                            <a href="https://github.com/JunhaumHayden/ComfortAid_APP_Project" class="btn btn-secondary me-auto">Ver Projeto</a>
+                        </div>
                     </div>
-
-                    <!-- <div class="flex-container" id="planos">
-
-                        <div>
-                            <h2>Planos</h2>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://raw.githubusercontent.com/JunhaumHayden/ComfortAid_APP_Project/refs/heads/main/assets/img/LogoComfortAid-removebg500.png" class="card-img-top" alt="ComfortAid API RESTful">
+                        <div class="card-body">
+                            <h5 class="card-title">ComfortAid API – Conectando Bem-Estar com Tecnologia!</h5>
+                            <p class="card-text">É o coração digital que impulsiona a o aplicativo. Construída com Java, essa API RESTful entrega todos os recursos necessários para um aplicativo que prioriza conforto, praticidade e eficiência.<br><br></p>
+                            <a href="https://github.com/JunhaumHayden/ComfortAid_API_Project" class="btn btn-primary">Ver Projeto</a>
                         </div>
-                
-                        <div class="list-planos">
-                            <div class="item-plano">
-                                <h3>Plano 2</h3>
-                                <br>
-                                <ul>
-                                    <li>Suporte 24h</li>
-                                    <li>Serviços de quarto</li>
-                                    <li>Guia turístico</li>
-                                </ul>
-                                <a href="#" class="btn">Saiba Mais!</a>
-                            </div>
-                
-                            <div class="item-plano">
-                                <h3>Plano 2</h3>
-                                <br>
-                                <ul>
-                                    <li>Suporte 24h</li>
-                                    <li>Serviços de quarto</li>
-                                    <li>Guia turístico</li>
-                                    <li>Roteiro de trilhas</li>
-                
-                                </ul>
-                                <a href="#" class="btn">Saiba Mais!</a>
-                            </div>
-                
-                            <div class="item-plano">
-                                <h3>Plano 3</h3>
-                                <br>
-                                <ul>
-                                    <li>Suporte 24h</li>
-                                    <li>Serviços de quarto</li>
-                                    <li>Guia turístico</li>
-                                    <li>Roteiro de trilhas</li>
-                                    <li>Serviço personalizado</li>
-                                    <li>Área Vip</li>
-                                </ul>
-                                <a href="#" class="btn">Saiba Mais!</a>
-                            </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://photo-cdn2.icons8.com/7V3aiSgSDGLRqK1IOTriyKXoBfltG_3ADM0L0KwCiB8/rs:fit:715:1072/czM6Ly9pY29uczgu/bW9vc2UtcHJvZC5l/eHRlcm5hbC9hMmE0/Mi8xNTc1Nzk4ZWFj/MjE0YjQ4OTczNWEy/ODdjOWUzOWZmZC5q/cGc.jpg" class="card-img-top" alt="LavaCode" width="50">
+                        <div class="card-body">
+                            <h5 class="card-title">LavaCode Project</h5>
+                            <p class="card-text">Aplicativo Desktop para gerenciar um lava a jato de veículos. Desenvolvido em Java e JavaFx</p>
+                            <a href="../FrontEnd/landingpage/Flexbox/projeto-flex-turismo/" class="btn btn-primary">Ver Projeto</a>
                         </div>
-                
-                    </div> -->
-                
-                   
-        </main>
-        <!-- Fim do main -->
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="./assets/imagens/flex-turismo.jpg" class="card-img-top" alt="FlexTurismo">
+                        <div class="card-body">
+                            <h5 class="card-title">FlexTurismo</h5>
+                            <p class="card-text">Landing page responsiva para uma agência de turismo.</p>
+                            <a href="../FrontEnd/landingpage/Flexbox/projeto-flex-turismo/" class="btn btn-primary">Ver Projeto</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="./assets/imagens/gatinhos.jpg" class="card-img-top" alt="Gatinhos Fofinhos">
+                        <div class="card-body">
+                            <h5 class="card-title">Gatinhos Fofinhos</h5>
+                            <p class="card-text">Página interativa com API de gatinhos.</p>
+                            <a href="../FrontEnd/landingpage/Flexbox/anuncios/gatinhos.html" class="btn btn-primary">Ver Projeto</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="./assets/imagens/ifsc.jpg" class="card-img-top" alt="IFSC">
+                        <div class="card-body">
+                            <h5 class="card-title">IFSC</h5>
+                            <p class="card-text">Projetos desenvolvidos durante o curso no IFSC.</p>
+                            <a href="https://www.ifsc.edu.br/web/campus-florianopolis" class="btn btn-primary" target="_blank">Visitar Site</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
 
-        <!-- Início do footer -->
-        <footer>
-            <!-- Início das redes sociais -->
-            <section>
-                <ul>
-                    <li>
-                        <a href="#"><img src="./imagens/logo-insta.png" alt="Instagram" width="30px" />
+    <!-- Projetos -->
+<section id="projetos" class="bg-light py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Projetos Destacados</h2>
+        
+        <!-- Carrossel -->
+        <div id="projetosCarousel" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicadores -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#projetosCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#projetosCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#projetosCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#projetosCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#projetosCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#projetosCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            </div>
+
+            <!-- Slides -->
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <div class="card mx-auto" style="width: 18rem;">
+                        <img src="https://raw.githubusercontent.com/JunhaumHayden/ComfortAid_APP_Project/refs/heads/main/assets/img/LogoComfortAid-removebg500.png" class="card-img-top" alt="ComfortAid APP">
+                        <div class="card-body">
+                            <h5 class="card-title">ComfortAid – Seu Bem-Estar na Palma da Mão!</h5>
+                            <p class="card-text">Aplicativo para agendamento de massagens terapêuticas e estéticas.</p>
+                            <a href="https://junhaumhayden.github.io/ComfortAid_APP_Project/" class="btn btn-secondary">WebPage</a>
+                            <a href="https://github.com/JunhaumHayden/ComfortAid_APP_Project" class="btn btn-secondary">Ver Projeto</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <div class="card mx-auto" style="width: 18rem;">
+                        <img src="https://raw.githubusercontent.com/JunhaumHayden/ComfortAid_APP_Project/refs/heads/main/assets/img/LogoComfortAid-removebg500.png" class="card-img-top" alt="ComfortAid API RESTful">
+                        <div class="card-body">
+                            <h5 class="card-title">ComfortAid API – Conectando Bem-Estar com Tecnologia!</h5>
+                            <p class="card-text">API RESTful desenvolvida em Java para o aplicativo ComfortAid.</p>
+                            <a href="https://github.com/JunhaumHayden/ComfortAid_API_Project" class="btn btn-primary">Ver Projeto</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <div class="card mx-auto" style="width: 18rem;">
+                        <img src="https://photo-cdn2.icons8.com/7V3aiSgSDGLRqK1IOTriyKXoBfltG_3ADM0L0KwCiB8/rs:fit:715:1072/czM6Ly9pY29uczgu/bW9vc2UtcHJvZC5l/eHRlcm5hbC9hMmE0/Mi8xNTc1Nzk4ZWFj/MjE0YjQ4OTczNWEy/ODdjOWUzOWZmZC5q/cGc.jpg" class="card-img-top" alt="LavaCode">
+                        <div class="card-body">
+                            <h5 class="card-title">LavaCode Project</h5>
+                            <p class="card-text">Aplicativo Desktop para gerenciar um lava a jato de veículos.</p>
+                            <a href="../FrontEnd/landingpage/Flexbox/projeto-flex-turismo/" class="btn btn-primary">Ver Projeto</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="carousel-item">
+                    <div class="card mx-auto" style="width: 18rem;">
+                        <img src="./assets/imagens/flex-turismo.jpg" class="card-img-top" alt="FlexTurismo">
+                        <div class="card-body">
+                            <h5 class="card-title">FlexTurismo</h5>
+                            <p class="card-text">Landing page responsiva para uma agência de turismo.</p>
+                            <a href="../FrontEnd/landingpage/Flexbox/projeto-flex-turismo/" class="btn btn-primary">Ver Projeto</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 5 -->
+                <div class="carousel-item">
+                    <div class="card mx-auto" style="width: 18rem;">
+                        <img src="./assets/imagens/gatinhos.jpg" class="card-img-top" alt="Gatinhos Fofinhos">
+                        <div class="card-body">
+                            <h5 class="card-title">Gatinhos Fofinhos</h5>
+                            <p class="card-text">Página interativa com API de gatinhos.</p>
+                            <a href="../FrontEnd/landingpage/Flexbox/anuncios/gatinhos.html" class="btn btn-primary">Ver Projeto</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 6 -->
+                <div class="carousel-item">
+                    <div class="card mx-auto" style="width: 18rem;">
+                        <img src="./assets/imagens/ifsc.jpg" class="card-img-top" alt="IFSC">
+                        <div class="card-body">
+                            <h5 class="card-title">IFSC</h5>
+                            <p class="card-text">Projetos desenvolvidos durante o curso no IFSC.</p>
+                            <a href="https://www.ifsc.edu.br/web/campus-florianopolis" class="btn btn-primary" target="_blank">Visitar Site</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controles (setas) -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#projetosCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#projetosCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+    <!-- Contato -->
+    <section id="contato" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Contato</h2>
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nome" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="nome" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">E-mail</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensagem" class="form-label">Mensagem</label>
+                            <textarea class="form-control" id="mensagem" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <ul class="list-unstyled d-flex mb-0">
+                    <li class="me-3">
+                        <a href="#" class="text-white">
+                            <img src="./assets/imagens/logo-insta.png" alt="Instagram" width="30px">
+                        </a>
+                    </li>
+                    <li class="me-3">
+                        <a href="#" class="text-white">
+                            <img src="./assets/imagens/logo-twitter.png" alt="Twitter" width="30px">
                         </a>
                     </li>
                     <li>
-                        <a href="#"><img src="./imagens/logo-twitter.png" alt="Twitter" width="30px" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="./imagens/logo-facebook.png" alt="Facebook" width="30px" />
+                        <a href="#" class="text-white">
+                            <img src="./assets/imagens/logo-facebook.png" alt="Facebook" width="30px">
                         </a>
                     </li>
                 </ul>
-            </section>
-            <!-- Fim das redes sociais -->
-
-            <div class="flex-container footer">
-                <p>&copy; 2022 HTML/CSS</p>
-                <p>Desenvolvido por: Carlos Hayden</p>
-
-
+                <div class="text d-flex ms-auto">
+                    <div class="text-end ms-auto">
+                        <p class="mb-0">&copy; 2023 Carlos Hayden</p>
+                        <p class="mb-0">Desenvolvido com ❤️ por Carlos Hayden</p>
+                    </div>
+                    <div class="logo me-auto">
+                        <img src="https://avatars.githubusercontent.com/u/79289647?v=4" width="40" alt="Logo"class="rounded-circle">
+                    </div>
+                </div>
             </div>
-        </footer>
-        <!-- Fim do footer -->
+        </div>
+    </footer>
 
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>

@@ -6,186 +6,218 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel=" preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="style.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;1,200;1,400&family=Red+Hat+Display:wght@400;500;700&family=Roboto&display=swap"
-        rel="stylesheet"> -->
-        <link rel="stylesheet" type="text/css" href="./CSS/estilo.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/estilo.css">
+    <link rel="shortcut icon" type="imagex/png" href="./assets/imagens/icon.ico">
 </head>
 
 <body>
-
+    
+    <!-- Header com Navbar -->
     <header>
-        <div class="flex-container menu">
-            <div>
-                <h1><img src="./imagens/logo.gif" alt="Logo da empresa XPTO"  width="100px"/></h1>
-            </div>
-            <ul class="list-items">
-                <li><a href="index.html" >Início</a></li>
-                <li><a href="contato.html" target="_blank" class="botao-destaque">Contato</a></li>
-                <!-- <li><a href="#planos">Planos</a></li> -->
-            </ul>
-        </div>
+        <h1>🌐 WebCode Development 🐘</h1>
+        
     </header>
-    <!-- Fim do header -->
-
-    <!-- Inicio do main -->
-    <main>
-        <!-- Inicio da section do conteúdo do site -->
-        <div class="texto-apresentacao">
-            <br><br><br><br>
-            <h1>Formulário de Contato</h1>
-             <p>Preencha os dados abaixo e envie sua mensagem de contato.</p><br><br>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand me-auto" href="#">
+                <img src="./assets/imagens/logo.gif" alt="Logo da empresa Junhaum Coorp" width="100px">
+            </a>
+            <!-- Botão de hambúrguer para telas pequenas -->
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Itens do menu -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary custom-btn" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary custom-btn" href="https://junhaumhayden.github.io/publish/">Destaques</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary btn-sm" href="https://github.com/JunhaumHayden?tab=repositories">Contribuições</a></a>
+                    </li><li class="nav-item">
+                        <a class="nav-link btn btn-primary cbtn-sm" href="contato.html">Contato</a>
+                    </li>
+                </ul>
+            </div>
         </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <div class="text-center mb-5">
+            <h1>Formulário de Contato</h1>
+            <p>Preencha os dados abaixo e envie sua mensagem de contato.</p>
+        </div>
+
         <section>
-            
             <article>
-                
-               
-               
-                <fieldset>
-                
-                    
-                    <legend>
-                        <h5>Dados de Contato</h5>
+                <form id="frmInscricao" action="contato.php" method="post" class="needs-validation" novalidate>
+                    <fieldset class="border p-4 rounded">
+                        <legend class="w-auto px-2">Dados de Contato</legend>
 
-                    
-                    </legend>
-                    <div class="entrada">
-                        <form id="frmInscricao" action="contato.php" method="post">
-                      <div class="rotulo">
-                            
-                            <label>Nome:</label><br>
-                            <div class="entrada mensagem">
-                             <input type="text" required="required" id="txtNome" maxlength="100" size="50" ><br></div><br>
-                    
-                      </div>
-                      <div class="rotulo">
-                            <label>Data de Nascimento:</label><br>
-                            <div class="entrada mensagem">
-                                <input type="date" required="required" id="txtDataNascimento"><br>
-                            </div><br>
-                       </div>
-
-                        <div class="rotulo">
-                        <label>Sexo:</label><br>
-                        <div class="entrada mensagem">
-                        <input type="radio" name="rdoSexo" value="M" required="required">
-                        <label>Masculino</label>
-                        <input type="radio" name="rdoSexo" value="F">
-                        <label>Femenino</label><br>
-                    </div><br>
-                    </div>
-
-                        <div class="rotulo">
-                            <label>Endereço:</label><br>
-                            <div class="entrada mensagem">
-                            <input type="text" required="required" id="txtLogradouro" maxlength="100" size="50"><br>
-                        </div><br>
-                    </div>
-
-                        <div class="rotulo">
-                        <label>Estado:</label><br>
-                        <div class="entrada mensagem">
-                        <select id="cbxEstado" required="required">
-                            <option value="">-Selecione-</option>
-                            <option value="1">SC-</option>
-                            <option value="2">MG</option>
-                        </select><br>
-                    </div><br>
-                </div>
-
-                        
-                        <div class="rotulo">
-                            <label>Cidade:</label><br>
-                            <div class="entrada mensagem">
-                        <select id="cbxEstado" required="required">
-                            <option value="">-Selecione-</option>
-                            <option value="1">Florianópolis-</option>
-                            <option value="2">Uberlândia</option>
-                        </select><br>
-                    </div><br>
-                </div>
-
-
-                        <div class="rotulo">
-                        <label>Celular:</label><br>
-                        <div class="entrada mensagem">
-                        <input type="tel" required="required" id="txtCelular" size="50" placeholder="(##) #####-####"
-                            maxlength="15"><br>
-                        </div> <br>
-                    </div>
-                        <div class="rotulo">
-                        <label>E-mail:</label><br>
-                          <div class="entrada mensagem">
-                          <input type="email" required="required" size="50" id="txtEmail" ><br>
-                         </div><br>
+                        <div class="mb-3">
+                            <label for="txtNome" class="form-label">Nome:</label>
+                            <input type="text" class="form-control" id="txtNome" required maxlength="100">
                         </div>
 
-
-                        <div class="rotulo">
-                          <label>Áreas de Interesse:</label><br>
-                          <div class="entrada mensagem">
-                             <input type="checkbox" value="HTML" name="chkAreasInteresse">
-                             <label>HTML</label>
-                             <input type="checkbox" value="CSS" name="chkAreasInteresse">
-                             <label>CSS</label>
-                             <input type="checkbox" value="JavaScript" name="chkAreasInteresse" >
-                             <label>JavaScript</label><br>
-                        </div><br>
-                    </div>
-
-                        <div class="rotulo">
-                            <label>Mensagem:</label><br>
-                            <div class="entrada mensagem">
-                            <textarea cols="50" rows="5" required="required" class="entrada mensagem"></textarea><br><br>
+                        <div class="mb-3">
+                            <label for="txtDataNascimento" class="form-label">Data de Nascimento:</label>
+                            <input type="date" class="form-control" id="txtDataNascimento" required>
                         </div>
-                    </div>
-                </div>
 
-                        <input id="btnEnviar" type="submit" value="Enviar" class="btn"/>
+                        <div class="mb-3">
+                            <label class="form-label">Sexo:</label>
+                            <div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="rdoSexo" id="rdoMasculino" value="M" required>
+                                    <label class="form-check-label" for="rdoMasculino">Masculino</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="rdoSexo" id="rdoFeminino" value="F">
+                                    <label class="form-check-label" for="rdoFeminino">Feminino</label>
+                                </div>
+                            </div>
+                        </div>
 
-                        </form>
-                    </div>
-                </fieldset>
+                        <div class="mb-3">
+                            <label for="txtLogradouro" class="form-label">Endereço:</label>
+                            <input type="text" class="form-control" id="txtLogradouro" required maxlength="100">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="cbxEstado" class="form-label">Estado:</label>
+                            <select class="form-select" id="cbxEstado" required>
+                                <option value="">-Selecione-</option>
+                                <option value="1">SC</option>
+                                <option value="2">MG</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="cbxCidade" class="form-label">Cidade:</label>
+                            <select class="form-select" id="cbxCidade" required>
+                                <option value="">-Selecione-</option>
+                                <option value="1">Florianópolis</option>
+                                <option value="2">Uberlândia</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="txtCelular" class="form-label">Celular:</label>
+                            <input type="tel" class="form-control" id="txtCelular" required placeholder="(##) #####-####" maxlength="15">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="txtEmail" class="form-label">E-mail:</label>
+                            <input type="email" class="form-control" id="txtEmail" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Áreas de Interesse:</label>
+                            <div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="chkHTML" value="HTML" name="chkAreasInteresse">
+                                    <label class="form-check-label" for="chkHTML">HTML</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="chkCSS" value="CSS" name="chkAreasInteresse">
+                                    <label class="form-check-label" for="chkCSS">CSS</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="chkJavaScript" value="JavaScript" name="chkAreasInteresse">
+                                    <label class="form-check-label" for="chkJavaScript">JavaScript</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="txtMensagem" class="form-label">Mensagem:</label>
+                            <textarea class="form-control" id="txtMensagem" rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </fieldset>
+                </form>
             </article>
-            <!--Fim do conteúdo de texto sobre o site-->
         </section>
-        <!--Fim da section do conteúdo do site-->
     </main>
-    <!-- Fim do main -->
 
-    <!-- Início do footer -->
-    <footer>
-        <!-- Início das redes sociais -->
-        <ul>
-            <li>
-                <a href="#">
-                    <img src="./imagens/logo-insta.png" alt="Instagram" width="30px" />
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="./imagens/logo-twitter.png" alt="Twitter" width="30px" />
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="./imagens/logo-facebook.png" alt="Facebook" width="30px" />
-                </a>
-            </li>
-        </ul>
-        <!-- Fim das redes sociais -->
+    <!-- Footer -->
+    <footer class="bg-blue text-white py-4">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <!-- Primeira lista (redes sociais) -->
+            <ul class="list-unstyled mb-3"> <!-- Removido d-flex -->
+                <li class="d-inline-block me-3">
+                    <a href="#" class="text-white">
+                        <img src="./assets/imagens/logo-insta.png" alt="Instagram" width="30px">
+                    </a>
+                </li>
+                <li class="d-inline-block me-3">
+                    <a href="#" class="text-white">
+                        <img src="./assets/imagens/logo-twitter.png" alt="Twitter" width="30px">
+                    </a>
+                </li>
+                <li class="d-inline-block">
+                    <a href="#" class="text-white">
+                        <img src="./assets/imagens/logo-facebook.png" alt="Facebook" width="30px">
+                    </a>
+                </li>
+            </ul>
 
-        <div class="flex-container footer">
-            <p>&copy; 2022 HTML</p>
-            <p>Desenvolvido por: Carlos Hayden</p>
+            <!-- Segunda lista (tecnologias) -->
+            <ul class="list-unstyled mb-3"> <!-- Removido d-flex -->
+                <li class="d-inline-block me-3">
+                    <a href="#" class="text-white">
+                        <img src="./assets/imagens/icon-html5-48.png" alt="HTML5" width="30px">
+                    </a>
+                </li>
+                <li class="d-inline-block me-3">
+                    <a href="#" class="text-white">
+                        <img src="./assets/imagens/icon-css3-48.ico" alt="CSS3" width="30px">
+                    </a>
+                </li>
+                <li class="d-inline-block">
+                    <a href="#" class="text-white">
+                        <img src="./assets/imagens/icons8-js-48.png" alt="JavaScript" width="30px">
+                    </a>
+                </li>
+            </ul>
+                <div class="text-end">
+                    <p class="mb-0">&copy; 2022 HTML</p>
+                    <p class="mb-0">Desenvolvido por: Carlos Hayden</p>
+                </div>
+            </div>
         </div>
     </footer>
-    <!-- Fim do footer -->
 
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <!-- Custom JS for form validation -->
+    <script>
+        (function () {
+            'use strict'
+            var forms = document.querySelectorAll('.needs-validation')
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+    </script>
 </body>
 
 </html>
