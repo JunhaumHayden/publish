@@ -2,30 +2,57 @@
 
 <h1 align="center"> My first web page published on internet </h1>
 
-![Logo retangular metade em preto com letras brancas escrito Junhaum e branco com letras pretas escrito Coorp](https://user-images.githubusercontent.com/79289647/194371641-caa2071a-e2cb-4fc4-a52d-0d6ec22b8dc3.gif)
 
 
+<img src="https://private-user-images.githubusercontent.com/79289647/416365002-f24bfb2e-f8bb-42a9-ab84-41ea0cb51b8b.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDA0Mjc3NzYsIm5iZiI6MTc0MDQyNzQ3NiwicGF0aCI6Ii83OTI4OTY0Ny80MTYzNjUwMDItZjI0YmZiMmUtZjhiYi00MmE5LWFiODQtNDFlYTBjYjUxYjhiLmdpZj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAyMjQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMjI0VDIwMDQzNlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTFlZjI1ZGMwN2JkN2RmOGM4OGI2MzY0NjVmYTc3MDZjY2I3MzJkZTZjYjY5OWYxNjY5Y2VhNTRlMTBiYWMzODUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.FB_9OnccW0I2p8QTZ17860KhmXphzqyVAI1qAtgofAc">
+
+
+[Imgur](https://imgur.com/70grkIF)
+
+<blockquote class="imgur-embed-pub" lang="en" data-id="70grkIF"><a href="https://imgur.com/70grkIF">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
 
 <p align="center">
 <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
 </p>
 
+## Technologies Used
+
+<p align="center">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
+  <img src="https://img.shields.io/badge/GitHub_Pages-327FC7?style=for-the-badge&logo=github&logoColor=white"/>
+</p>
+
 # Description
 
-English
+This repository contains a fun and interactive web project that will be published on GitHub Pages. Below is a brief description of each page included in the project:
 
-Project under development for the Basic Front-End Programming course at SENAI.
-The project consists of a Landing Page for an Internet company. A home page containing information about the company and another page containing a form.
-The objective of the project is to put into practice the knowledge acquired in HTML, CSS and JavaScript.
-I took the liberty of integrating, to simulate the advertisement of partner pages, a page that presents photos of kittens and that changes the photo when clicking on the button using JavaScript and a dummy page of a tourism agency built using FlexBox.
+- **Home Page**: The landing page of the website, welcoming users with a brief introduction and navigation links to other sections.
+- **About Page**: A page providing information about the project, its purpose, and the team behind it.
+- **Contact Page**: A page with a contact form for users to reach out with questions or feedback.
+- **Gallery Page**: A showcase of images and media related to the project.
 
-Português-Br
+## Project Structure
 
-Projeto em desenvolvimento para a disciplina de Programação Básica em Front-End do SENAI.
-O projeto é composto de uma Landing Page para uma empresa de Internet. Umpágina de início contendo informações sobre a empresa e outra página contendo um formulário.
-O objetivo do projeto é utilizar na prática os conhecimentos adquiridos em HTML, CSS e JavaScript.
-Tomei a liberdade de integrar, para simular o anúncio de páginas parceiras, uma página que apresenta fotos de gatinhos e que muda a foto ao se clicar no botão utilizando JavaScript e página fictícia de uma agência de turismo construída utilizando FlexBox.
+The project is organized as follows:
+```
+/publish
+├── index.html          # Home Page
+├── about.html          # About Page
+├── contact.html        # Contact Page
+├── gallery.html        # Gallery Page
+├── css/
+│   └── styles.css      # Stylesheet
+├── js/
+│   └── scripts.js      # JavaScript functionality
+└── assets/
+    ├── images/         # Image assets
+    └── icons/          # Icon assets
+```
+
+
 
 # Author
 
