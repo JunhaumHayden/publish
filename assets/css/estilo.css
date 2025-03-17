@@ -1,22 +1,68 @@
 /* Usado para importar regras de estilo de outras folhas de estilo. */ 
 
-
+   :root {
+        --primary-color: #008DDA;
+        --secondary-color: #41C9E2;
+        --tertiary-color: #ACE2E1;
+        --quaternary-color: #F7EEDD;
+        --quinary-color: #efddddcc;
+        --senary-color: #333;
+    }
    
     header h1 {
         margin: 0;
         color: #ff4081;
-        text-shadow: 1px 1px #efddddcc;
+        text-shadow: 0.1rem 0.1rem var(--senary-color);
         
+    }
+    body {
+        font-family: 'Roboto', sans-serif;
+        background-color: var(--quaternary-color);
+        color: var(--senary-color);
+        margin: 0;
+        padding: 0;
     }
     .img-max-size {
         max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
-        max-height: 210px; /* Define a altura máxima da imagem */
+        max-height: 50%; /* Define a altura máxima da imagem */
         width: auto; /* Mantém a proporção da imagem */
         height: auto; /* Mantém a proporção da imagem */
         display: block; /* Remove espaços extras abaixo da imagem */
         margin: 0 auto; /* Centraliza a imagem horizontalmente */
     }
+    .container-carousel {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        background-color: var(--secondary-color); /* Fundo cinza claro para destacar a área do carrossel */
+        border-radius: 0.7rem; /* Bordas arredondadas para um visual mais moderno */
+        box-shadow: 0 0.4rem 0.5rem rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade */
+        padding: 1.3rem; /* Espaçamento interno */
+    }
+    .carousel-indicators {
+        position: static;
+        margin-top: 1.3rem;
+    }
 
+    .card {
+        height: 100%;
+    }
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .img-max-size {
+        max-height: 13rem;
+        object-fit: cover;
+    }
+
+#btn-card {
+    margin: 0.5rem; /* Ajuste a margem conforme necessário */
+    padding: 0.5rem 1rem; /* Ajuste o preenchimento conforme necessário */
+    display: inline-block; /* Garante que o botão mantenha seu tamanho */
+    box-sizing: border-box; /* Inclui o preenchimento e a borda no tamanho total do botão */
+}
     
    
     
