@@ -105,6 +105,21 @@ section h2::after {
     border-radius: 2px;
 }
 
+/* About Section Boxes */
+.about-box {
+    background-color: var(--card-bg);
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    padding: 2rem;
+    height: 100%;
+    border-left: 4px solid var(--accent-color);
+}
+
+.about-box p {
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+
 /* Cards */
 .card {
     border: none;
